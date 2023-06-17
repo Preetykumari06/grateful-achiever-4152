@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nunito:wght@300;400;500;700&family=Roboto:wght@500&display=swap');
+
+:root{
+    --orange:#ffa500;
+}
+
+ *{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+ }
+*::selection{
+    background: var(--orange);
+    color:#fff;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+.heading{
+    text-align: center;
+    padding: 2.5rem 0;
+}
+.heading span{
+    font-size: 3.5rem;
+    background: rgba(255,155,0,.2);
+    color: var(--orange);
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+}
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    /* align-items: center; */
+}
+.contact .row .img{
+    flex: 1 1 35rem;
+    /* border:2px solid red; */
+}
+.contact .row .img img{
+    width:100%;
+    height:500px;
+}
+.contact .row form{
+    flex:1 1 40rem;
+    /* border:2px solid red; */
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    /* background: #ffa500; */
+}
+.contact .row form .inputBox{
+    padding: .5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact .row form .inputBox input,
+.contact .row form textarea{
+    width:49%;
+    padding: 1rem;
+    margin:1rem 0;
+    /* border: .1rem solid rgba(0,0,0,.1); */
+    font-size: 1.7rem;
+    color:#333;
+    text-transform: none;
+    background: #f7f7f7;
+}
+.contact .row form textarea{
+    height: 22rem;
+    resize:none;
+    width:100%;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--orange);
+    color: #fff;
+    padding:.8rem 3rem;
+    border:.2rem solid var(--orange);
+    cursor: pointer;
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+/* media queries for navbar */
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width:991px){
+    section{
+        padding: 2rem;
+    }
+}
+@media (max-width:768px){
+    
+   
+}
+@media (max-width:450px){
+  html{
+    font-size: 50%;
+  }
+  .heading span{
+    font-size: 2.5rem;
+  }
+  .contact .row form .inputBox input{
+    width:100%;
+  }
+}
