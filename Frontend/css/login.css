@@ -55,6 +55,7 @@
        font-weight: bold;
        background-color: red;
        color:white;
+       /* color: var(--orange); */
        padding-right: 47px;
    }
    h1{
@@ -63,4 +64,19 @@
      font-size: 45px;
      color:red;
    }
+   /* #remember{
+    margin: 2rem 0;
+   }
+   form label{
+    font-size: 1.5rem;
+   }
+   #form p{
+    /* padding: .01rem 0; */
+    /* font-size: 1.5rem;
+    color: #666;
+   }
+   #form p a{
+    color: var(--orange);
+   } */ 
+
    
