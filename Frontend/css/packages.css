@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nunito:wght@300;400;500;700&family=Roboto:wght@500&display=swap');
+
+:root{
+    --orange:#ffa500;
+}
+
+ *{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+ }
+*::selection{
+    background: var(--orange);
+    color:#fff;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+.heading{
+    text-align: center;
+    padding: 2.5rem 0;
+}
+.heading span{
+    font-size: 3.5rem;
+    background: rgba(255,155,0,.2);
+    color: var(--orange);
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+}
+
+
+.offers{
+    width:80%;
+    height:auto;
+     /* border:1px solid black;  */
+    margin: auto;
+    margin-top: 50px;
+}
+.offers h1{
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+}
+.offers p{
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffa500;
+    text-align: center;
+    margin: 0;
+}
+.cards_of{
+    /* border: 2px solid red; */
+    margin-top: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border:1px solid yellow;  */
+    flex-wrap: wrap;
+    gap: 2rem;
+    /* flex-wrap: wrap; */
+}
+.cards_of .card {
+    position: relative;
+    width:200px;
+    height:350px;
+    /* border:1px solid green; */
+    margin: 10px;
+}
+.cards_of .card h3{
+    width:140px;
+    padding:6px 0px;
+    background: rgb(165,243,165);
+    border-radius: 20px;
+    font-size: 12px;
+    display: grid;
+    place-items: center;
+    margin:auto;
+}
+.img-text{
+    position:relative;
+    width:100%;
+    height: 250px;
+    margin-top: 5px;
+}
+.img-text img{
+    position:relative;
+    width:100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.img-text h4{
+    position: absolute;
+    font-size: 10px;
+    font-weight: 300;
+    padding:10px 15px;
+    bottom:0;
+    margin: 0;
+    color:#fff;
+    z-index: 1;
+}
+.img-text h4::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background:rgb(255,255,255,.1);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+}
+.cards_of .card .cont-bx{
+    width:99%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border:1px solid rgb(214,214,214);
+    padding: 5px 0px;
+    border-radius: 0px 0px 5px 5px;
+}
+.price, .days{
+    margin:0px 8px;
+  }
+  .price .heart-chat{
+    display: flex;
+    align-items: center;
+  }
+  .price .heart-chat i:nth-child(1){
+      color:red;
+      font-size: 13px;
+      margin-right: 10px;
+  }
+  .price .heart-chat i span{
+      color:black;
+      font-size: 12px;
+      margin-left: 3px;
+      font-style: normal;
+  }
+  .price .heart-chat i:nth-child(2){
+      color:rgb(112,196,229);
+      font-size: 13px;
+      margin-right: 10px;
+  }
+  .price .info-price{
+      display: flex;
+      align-items: center;
+      margin-top: 3px;
+  }
+  .price .info-price a {
+      text-decoration: none;
+      color:black;
+      font-size: 11px;
+      transition: .3s linear;
+      margin-right: 13px;
+  }
+  .price .info-price a:hover{
+      color: grey;
+  }
+  .price .info-price h4{
+      margin:0;
+      font-size: 13px;
+  }
+  .days{
+      color:white;
+      background: black;
+      font-size: 8px;
+      border-radius: 50%;
+      padding:10px;
+      text-align: center;
+      cursor: pointer;
+      transition: .3s linear;
+  }
+  .days:hover{
+      transform: rotate(360deg);
+  }
